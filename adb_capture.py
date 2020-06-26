@@ -29,11 +29,11 @@ def main(argv):
     try:
        opts, args = getopt.getopt(argv, "ha:d:", ["aname=", "device="])
     except getopt.GetoptError:
-       print("usage: adb_capture.py -a < app_name > -d < device_id >")
+       print("usage: adb_capture.py -a <app_name> -d <device_id>")
        sys.exit(2)
     for opt, arg in opts:
        if opt == '-h':
-          print("usage: adb_capture.py -a < app_name > -d < device_id >")
+          print("usage: adb_capture.py -a <app_name> -d <device_id>")
           sys.exit()
        elif opt in ("-a", "--aname"):
           app_name = arg
